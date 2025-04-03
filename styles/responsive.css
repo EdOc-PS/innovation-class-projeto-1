@@ -1,0 +1,206 @@
+@media screen and (width > 768px) {
+    header {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .container_warning {
+            width: 100%;
+            padding: .3rem .5rem;
+        }
+
+        .container_search {
+            flex-direction: row;
+            padding-top: 1rem;
+            align-items: center;
+            width: 70%;
+
+            .container_itens {
+                margin-top: 0;
+
+                .btn_menu {
+                    display: none;
+                }
+
+                .body_input {
+                    margin-left: 2rem;
+                    padding: .4rem .5rem;
+                    border: 2px solid var(--gray);
+                    width: 50%;
+
+                    input {
+                        padding: 0rem 1rem;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .container_categories{
+            width: 68%;
+            display: block;
+            padding: .8rem .5rem;
+            .ul_categories{
+                width: 100%;
+                justify-content: space-between;
+                
+                .li_categories{
+                    display: flex;
+                    font-size: 10px;
+                    cursor: pointer;
+                }
+                .li_categories:first-child{
+                    font-weight: 700;
+                    justify-content: center;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+
+    .section_banner {
+        
+        img {
+            height: 50vh;
+            margin-top: 110px;
+            aspect-ratio: auto;
+        }
+    }
+
+    .section_detail {
+        .container_detail {
+            display: flex;
+            justify-content: center;
+
+            .content_detail {
+                flex-direction: row;
+                width: 55%;
+
+                .container_text {
+                    padding: 1.5rem;
+                    align-items: start;
+
+                }
+            }
+        }
+
+        .container_detail:nth-child(2) {
+            .content_detail {
+                flex-direction: row-reverse;
+
+                .container_text {
+                    align-items: center;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .section_banner_menssage {
+        .container_img {
+            height: 70vh;
+
+
+            .container_text_img {
+                padding: 2rem;
+                font-size: 22px;
+
+            }
+
+        }
+    }
+
+    footer {
+        padding-top: 2.5rem;
+        align-items: center;
+
+        .container_register {
+            width: 70%;
+
+            form {
+                padding: 3.5rem 6rem;
+                flex-direction: row;
+
+                .body_input {
+                    padding: .8rem;
+
+                    input {
+                        font-size: 12px;
+                    }
+
+                }
+
+                .body_input_checkbox {
+                    gap: .5rem;
+
+                    p {
+                        font-size: 10px;
+                        white-space: nowrap;
+                    }
+                }
+
+                .btn_form {
+                    width: 50%;
+                    padding: .8rem;
+                }
+            }
+        }
+
+        .container_networks {
+            width: 100%;
+            padding: 3rem 2rem;
+
+            .container_links {
+                align-items: center;
+                justify-content: space-between;
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+
+                .container_midias {}
+
+                .container_about {
+                    width: 100%;
+                    justify-content: space-evenly;
+
+                    .ul_list {
+
+                        .li_list {
+                            margin: 5px 0;
+                            font-size: 12px;
+                        }
+                    }
+
+                    h4 {
+                        font-size: 12px;
+                    }
+
+                }
+            }
+
+            .container_payments {
+                .ul_pay {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+
+        .contaienr_copyright {
+            width: 70%;
+
+            p {
+                font-size: 10px;
+            }
+
+            .ul_copy {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
