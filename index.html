@@ -9,78 +9,255 @@
     <link rel="stylesheet" href="./styles/structure.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 
 </head>
 
 <body>
     <header>
         <div class="container_warning">
-            <p>Ganhe R$100,00 de desconto no seu primeiro pedido. Utilize o cupom DESCONTO10</p>
+            <p>Ganhe <span style="background-color: #6220C1; padding: .1rem; border-radius: 5px;">R$100,00</span>
+                de desconto no seu primeiro pedido. Utilize o cupom
+                <span style="font-weight: 300; font-style: italic;">DESCONTO10</span>
+            </p>
         </div>
         <div class="container_search">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScf7cpOpm_yuoasRfGI0ECIIwXOqRE9vdLXTmtzqOtlkZBu-ZHXjjTfzh3uqiu8RyfJA&usqp=CAU"
-                alt="" class="logo">
-
+            <div class="content_search_up">
+                <button class="btn_menu"><i class="fi fi-br-menu-burger"></i></button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScf7cpOpm_yuoasRfGI0ECIIwXOqRE9vdLXTmtzqOtlkZBu-ZHXjjTfzh3uqiu8RyfJA&usqp=CAU"
+                    alt="" class="logo">
+                <i class="fi fi-rr-shopping-cart"></i>
+            </div>
             <div class="container_itens">
-                <button class="btn_menu"><i class="fi fi-rr-menu-burger"></i></button>
-
                 <div class="body_input">
-                    <input type="text" placeholder="Digite aqui oque você procura">
-                    <i class="fi fi-rr-search"></i>
+                    <input id="input_search" type="text" placeholder="Digite aqui oque você procura">
+                    <button id="btn_search"><i class="fi fi-rr-search"></i></button>
                 </div>
+                <div class="container_searchrResult">
+                    <p id="searchResult"></p>
+                    <i class="fi fi-rr-cross"></i>
+                </div>
+
                 <div class="container_user">
-                    <i class="fi fi-rr-user"></i>
+                    <div class="content_user">
+                        <i class="fi fi-rr-user"></i>
+                        <div class="content_user_text">
+                            <p>Ola,</p>
+                            <p>Nome do cliente!</p>
+                        </div>
+                    </div>
                     <i class="fi fi-rr-shopping-cart"></i>
                 </div>
             </div>
         </div>
         <div class="container_categories">
             <ul class="ul_categories">
-                <li class="li_categories"><i class="fi fi-rr-menu-burger"></i>Todas as Categorias</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
-                <li class="li_categories">Departamento</li>
+                <li class="li_categories"><button class="btn_menu"><i class="fi fi-br-menu-burger"></i>Todas as
+                        Categorias</button></li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
+                <li class="li_categories comun">Departamento</li>
             </ul>
         </div>
+        <div class="container_menu_expanded">
+            <div class="container_allCategories">
+                <div class="content_side">
+                    <div class="content_ulDepartament">
+                        <ul class="ul_departament">
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+                            <li class="li_departament">Departamento<i class="fi fi-rr-angle-small-right"></i></li>
+
+                    </div>
+                    <div class="content_allCategories">
+                        <div class="content_itens">
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+                            <span>catergorias</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container_allProducts">
+                    <div class='content_img' alt="">
+                        <div class="content_text">
+                            <p>Confira os Produtos <strong>Que acabaram De chegar</strong></p>
+                            <span>Ver Todos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_departament">
+                <div class="content_allCategories">
+                    <h1>Departamento</h1>
+                    <div class="content_itens">
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+                        <span>catergorias</span>
+
+                    </div>
+                </div>
+                <div class="container_allProducts">
+                    <div class='content_img' alt="">
+                        <div class="content_text">
+                            <p>Confira os Produtos <strong>Que acabaram De chegar</strong></p>
+                            <span>Ver Todos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
+
     <section class="section_banner">
         <img src="./assets/banner.png" alt="">
     </section>
-    <section class="section_carrrossel">
 
+    <section class="section_carrossel">
+        <div class="container_carrossel">
+            <div class="container_carrossel_title">
+                <h1> Lançamentos </h1>
+                <a href=""> Ver mais </a>
+            </div>
+            <div class="content_carrossel">
+                <div class="body_carrossel">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="body_carrossel">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>
+            <div class="container_guidance">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </section>
+
     <section class="section_detail">
         <div class="container_detail">
             <div class="content_detail">
                 <img src="./assets/item2.png" alt="item">
                 <div class="container_text">
                     <h1>Lorem Ipsum</h1>
-                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus
-                        ut
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
-                        pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
-                        lacinia.
-                        Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
-                        a
-                        libero commodo egestas efficitur id augue.</p>
-                    <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
-                        lacus ut
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
-                        pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
-                        lacinia.
-                        Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
-                        a
-                        libero commodo egestas efficitur id augue.
-                    </p>
+                    <div class="content_desktop">
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus
+                            ut
+                            eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia
+                            pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
+                            lacinia.
+                            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis
+                            elit
+                            a
+                            libero commodo egestas efficitur id augue.</p>
+                        <p>
+                            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus ut
+                            eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia
+                            pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
+                            lacinia.
+                            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis
+                            elit
+                            a
+                            libero commodo egestas efficitur id augue.
+                        </p>
+                    </div>
+                    <div class="content_mobile">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.</p>
+                        <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+                            quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus
+                            sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat.
+                            Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,28 +292,45 @@
                 <img src="./assets/item2.png" alt="item">
                 <div class="container_text">
                     <h1>Lorem Ipsum</h1>
-                    <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus
-                        ut
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
-                        pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
-                        lacinia.
-                        Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
-                        a
-                        libero commodo egestas efficitur id augue.</p>
-                    <p>
-                        Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
-                        lacus ut
-                        eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia
-                        pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
-                        lacinia.
-                        Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit
-                        a
-                        libero commodo egestas efficitur id augue.
-                    </p>
+                    <div class="content_desktop">
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus
+                            ut
+                            eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia
+                            pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
+                            lacinia.
+                            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis
+                            elit
+                            a
+                            libero commodo egestas efficitur id augue.</p>
+                        <p>
+                            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus ut
+                            eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia
+                            pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget
+                            lacinia.
+                            Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis
+                            elit
+                            a
+                            libero commodo egestas efficitur id augue.
+                        </p>
+                    </div>
+                    <div class="content_mobile">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.</p>
+                        <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum
+                            quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus
+                            sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat.
+                            Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="section_banner_menssage">
         <div class="container_img">
             <img src="./assets/avanti_banner.jpg" alt="">
@@ -146,6 +340,7 @@
         </div>
 
     </section>
+
     <footer>
         <div class="container_register">
             <h1>Cadastre na nossa <a href=""> newsletter</a></h1>
@@ -176,62 +371,40 @@
                     </ul>
                 </div>
                 <div class="container_about">
-                    <div class="container_list">
-                        <h4>Institucional</h4>
+                    <details class="details_about">
+                        <summary>Institucional<i class="fi fi-rr-angle-small-down"></i></summary>
                         <ul class="ul_list">
-                            <li class="li_list">
-                                <h5>Sobre Nós</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Nossas Lojas</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Privacidade e Segurança</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Termos e Condições</h5>
+                            <li class="li_list">Sobre Nós</li>
+                            <li class="li_list">Nossas Lojas</li>
+                            <li class="li_list">Privacidade e Segurança</li>
+                            <li class="li_list">Termos e Condições</li>
+                        </ul>
+                    </details>
+
+                    <details class="details_about">
+                        <summary>Central de Ajuda<i class="fi fi-rr-angle-small-down"></i></summary>
+                        <ul class="ul_list">
+                            <li class="li_list">Fale Conosco</li>
+                            <li class="li_list">Frete e Entrega</li>
+                            <li class="li_list">Trocas e Devoluções</li>
+                            <li class="li_list">Formas de Pagamento</li>
+                            <li class="li_list">FAQ</li>
+                        </ul>
+                    </details>
+
+                    <details class="details_about">
+                        <summary>Atendimento<i class="fi fi-rr-angle-small-down"></i></summary>
+                        <ul class="ul_list">
+                            <li class="li_list"><strong>Telefone:</strong> (00) 1234-5678</li>
+                            <li class="li_list"><strong>E-mail:</strong> exemplo@exemplo.com.br</li>
+                            <li class="li_list"><strong>Horário de Atendimento:</strong>
+                                <ul>
+                                    <li>Segunda a Sábado: 07h00 às 23h00</li>
+                                    <li>Domingo e Feriados: 07h00 às 21h00</li>
+                                </ul>
                             </li>
                         </ul>
-                    </div>
-                    <div class="container_list">
-                        <h4>Central de ajuda</h4>
-                        <ul class="ul_list">
-                            <li class="li_list">
-                                <h5>Fale Conosco</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Frete e entrega</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Trocas e Devoluçoes</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>Formas de Pagamento</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5>FAQ</h5>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="container_list">
-                        <h4>Atendimento</h4>
-                        <ul class="ul_list">
-                            <li class="li_list">
-                                <h5><strong>Telefone: </strong>(00) 1234-5678</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5><strong>E-mail: </strong>exemplo@exemplo.com.br</h5>
-                            </li>
-                            <li class="li_list">
-                                <h5><strong>Hórario de atendimento:</strong>
-                                    <ul>
-                                        <li> Segunda a Sabado: 07h00 às 23h00</li>
-                                        <li> Domingo e Feriados: 07h00 às 21h00</li>
-                                    </ul>
-                                </h5>
-                            </li>
-                        </ul>
-                    </div>
+                    </details>
                 </div>
             </div>
             <div class="container_payments">
@@ -248,7 +421,7 @@
                 </ul>
             </div>
         </div>
-        <div class="contaienr_copyright">
+        <div class="container_copyright">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation
                 ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
@@ -266,6 +439,8 @@
             </ul>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
