@@ -2,12 +2,13 @@
 
 :root{
     --blue: #005CFF;
+    --new: #00264E;
+    --blue_discount: #5EC0BE;
+    --gray_strong: #303030;
     --gray: #EEEEEE;
-    --gray_strong: gray;
     --gray_banner: #DEDEDE;
     --gray_footer: #F5F5F5;
-    --new: #00264E;
-    --background_promo: #F5F5F5;
+    --white: white;
 }
 
 *{

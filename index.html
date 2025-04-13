@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto 1</title>
+    <title>Avanti</title>
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/structure.css">
     <link rel="stylesheet" href="./styles/responsive.css">
@@ -16,6 +16,7 @@
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-straight/css/uicons-thin-straight.css'>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -173,14 +174,14 @@
         <img src="./assets/banner.png" alt="">
     </section>
 
-    <section class="section_carrossel">
+    <section class="section_carrossel swiper">
         <div class="container_carrossel">
             <div class="container_carrossel_title">
                 <h1> Lançamentos </h1>
                 <a href=""> Ver mais </a>
             </div>
-            <div class="content_carrossel">
-                <div class="body_carrossel">
+            <ul class="content_carrossel swiper-wrapper">
+                <li class="body_card swiper-slide">
                     <span class="type_new">NOVO</span>
                     <img src="/assets/man_model.png" alt="">
                     <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
@@ -193,9 +194,9 @@
                         <p class="description_price">Ou em até 10x de R$ 7,90</p>
                     </div>
                     <button>Comprar</button>
-                </div>
+                </li>
 
-                <div class="body_carrossel">
+                <li class="body_card swiper-slide">
                     <span class="type_new">NOVO</span>
                     <img src="/assets/man_model.png" alt="">
                     <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
@@ -208,14 +209,89 @@
                         <p class="description_price">Ou em até 10x de R$ 7,90</p>
                     </div>
                     <button>Comprar</button>
-                </div>
-            </div>
-            <div class="container_guidance">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
+
     </section>
 
     <section class="section_detail">
@@ -331,6 +407,126 @@
         </div>
     </section>
 
+    <section class="section_carrossel swiper">
+        <div class="container_carrossel carrossel_responsive carrossel_control">
+            <div class="container_carrossel_title">
+                <h1> Lançamentos </h1>
+                <a href=""> Ver mais </a>
+            </div>
+            <ul class="content_carrossel swiper-wrapper">
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+
+                <li class="body_card swiper-slide">
+                    <span class="type_new">NOVO</span>
+                    <img src="/assets/man_model.png" alt="">
+                    <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+                    <div class="container_price">
+                        <div class="same-place">
+                            <p class="original_price">R$100,00</p>
+                            <p class="discount">10% OFF</p>
+                        </div>
+                        <p class="new_price">R$ 79,90</p>
+                        <p class="description_price">Ou em até 10x de R$ 7,90</p>
+                    </div>
+                    <button>Comprar</button>
+                </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+    </section>
+
     <section class="section_banner_menssage">
         <div class="container_img">
             <img src="./assets/avanti_banner.jpg" alt="">
@@ -364,10 +560,10 @@
                     <img src="https://precolandia.vtexassets.com/assets/vtex/assets-builder/precolandia.store-theme/7.0.14/icons/avantiBlackLogo___9aca7be175e8870cb11cfde1df80079f.png"
                         alt="logo" class="logo">
                     <ul class="ul_midias">
-                        <li class="li_midias"><i class="fi fi-brands-instagram"></i></li>
-                        <li class="li_midias"><i class="fi fi-brands-facebook"></i></li>
-                        <li class="li_midias"><i class="fi fi-brands-youtube"></i></li>
-                        <li class="li_midias"><i class="fi fi-brands-tik-tok"></i></li>
+                        <li class="li_midias"><img src="/assets/instagram.png" alt=""></li>
+                        <li class="li_midias"><img src="/assets/facebook.png" alt=""></li>
+                        <li class="li_midias"><img src="/assets/youtube-logo.png" alt=""></li>
+                        <li class="li_midias"><img src="/assets/tiktok.png" alt=""></li>
                     </ul>
                 </div>
                 <div class="container_about">
@@ -440,7 +636,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/swiper.script.js"></script>
 </body>
 
 </html>

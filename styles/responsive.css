@@ -1,3 +1,4 @@
+/* Styles para versão Pc*/
 @media screen and (width > 768px) {
     header {
         height: auto;
@@ -43,12 +44,12 @@
                     }
                 }
 
-                .container_searchrResult{
+                .container_searchrResult {
                     width: 50%;
                     bottom: -140%;
                     left: 3%;
-     
-                    p{
+
+                    p {
                         font-size: 12px;
                     }
                 }
@@ -108,7 +109,7 @@
         }
 
         .container_menu_expanded {
-            background-color: white;
+            background-color: var(--white);
             padding: 0rem;
             height: 34vh;
             width: 68%;
@@ -222,7 +223,7 @@
                         grid-template-columns: 1fr 1fr 1fr;
                         gap: 1rem;
                         text-transform: capitalize;
-                        color: #303030;
+                        color: var(--gray_strong);
 
                         span {
                             transition: .3s;
@@ -266,7 +267,7 @@
                         width: 100%;
                         padding: 2rem 1rem 3rem 1rem;
                         position: absolute;
-                        color: white;
+                        color: var(--white);
                         z-index: 2;
                         display: flex;
                         flex-direction: column;
@@ -286,7 +287,7 @@
                             font-size: 12px;
                             text-align: center;
                             text-transform: uppercase;
-                            border: 1px solid white;
+                            border: 1px solid var(--white);
                             border-radius: 10px;
                         }
 
@@ -301,7 +302,7 @@
 
         }
 
-        .fi-rr-shopping-cart::after{
+        .fi-rr-shopping-cart::after {
             width: 18px;
             height: 18px;
             top: -15%;
@@ -310,11 +311,26 @@
     }
 
     .section_banner {
-
         img {
             height: 55vh;
             margin-top: 110px;
             aspect-ratio: initial;
+        }
+    }
+
+    .section_carrossel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: 1rem 0;
+
+        .container_carrossel .container_carrossel_title a {
+            text-decoration: none;
+        }
+
+        .carrossel_responsive {
+            display: flex !important;
         }
     }
 
@@ -350,8 +366,6 @@
                     p {
                         min-width: 50%;
                     }
-
-
                 }
             }
         }
@@ -378,13 +392,10 @@
         .container_img {
             height: 70vh;
 
-
             .container_text_img {
                 padding: 2rem;
                 font-size: 22px;
-
             }
-
         }
     }
 
@@ -493,7 +504,6 @@
             }
         }
     }
-
 }
 
 @media screen and (width < 768px) {
@@ -506,6 +516,7 @@
 
 }
 
+/* Styles para versão para monitores medios*/
 @media screen and (width < 965px) {
     .container_detail {
         .content_detail {
@@ -534,6 +545,17 @@
                 width: 100%;
                 justify-content: center;
             }
+        }
+    }
+}
+
+/* Styles para versão para monitores com alturas medias*/
+@media screen and (height < 768px) {
+    .container_menu_expanded {
+        height: 50vh !important;
+
+        .content_allCategories .content_itens {
+            grid-template-columns: 1fr 1fr 1fr 1fr !important;
         }
     }
 }
