@@ -646,11 +646,23 @@ footer {
                         font-size: 18px;
                         display: flex;
                         justify-content: space-between;
+                        
+                        .content_words{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            .elements_heading{
+                                font-size: 14px;
+                                color: #656565;
+                            }
+                        }
 
                         i {
                             color: var(--blue);
                             font-size: 20px;
                         }
+                       
                     }
 
                     .ul_list,
