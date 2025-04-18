@@ -665,9 +665,28 @@ footer {
                        
                     }
 
+                    
+
                     .ul_list,
                     ul {
                         flex-direction: column;
+                        
+                        .li_list{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                        }
+
+                        .li_list:last-child{
+                            flex-direction: column;
+                            align-items: start;
+
+                            .text_sublist{
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                            }
+                        }
 
                         .li_list,
                         li {
