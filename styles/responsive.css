@@ -311,13 +311,22 @@
     }
 
     .section_banner {
-        img {
-            height: 55vh;
+        .desktop-banner {
             margin-top: 110px;
-            aspect-ratio: initial;
+            display: flex;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    
+        .mobile-banner {
+            display: none;
         }
     }
-
+    
     .section_carrossel {
         display: flex;
         align-items: center;
@@ -325,8 +334,24 @@
         width: 70%;
         margin: 1rem 0;
 
-        .container_carrossel .container_carrossel_title a {
-            text-decoration: none;
+        .container_carrossel {
+            .container_carrossel_title a {
+                text-decoration: none;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 10px;
+                height: 10px;
+                padding: .8rem;
+                box-shadow: 0 4px 7px -2px #0000006e;
+                border: 1px solid var(--blue);
+                border-radius: 50%;
+                background-color: var(--white);
+                display: flex;
+                align-items: center;
+            }
+
         }
 
         .carrossel_responsive {
@@ -390,7 +415,7 @@
 
     .section_banner_menssage {
         .container_img {
-            height: 70vh;
+            height: 41.25rem;
 
             .container_text_img {
                 padding: 2rem;
@@ -458,14 +483,21 @@
                         width: auto;
 
                         .ul_list {
+                            margin-top: 15px;
 
                             .li_list,
                             li {
                                 margin: 5px 0;
-                                font-size: 14px;
+                                font-size: 16px;
 
                             }
+
+                            li {
+                                font-size: 14px;
+                            }
                         }
+
+
 
                     }
 
@@ -518,16 +550,18 @@
 
 /* Styles para versão para monitores medios*/
 @media screen and (width < 965px) {
+    header{
+        .container_categories .ul_categories{
+            justify-content: center;
+            gap: .8rem;
+            flex-wrap: wrap;
+        }
+    }
+    
     .container_detail {
         .content_detail {
             text-align: center;
             flex-wrap: wrap;
-
-            .container_text {
-                h1 {
-                    text-align: center;
-                }
-            }
         }
     }
 

@@ -46,3 +46,9 @@ button{
     background-color: transparent;
     cursor: pointer;
 }
+
+.elements_heading {
+    font-size: 14px;
+    color: #656565;
+    font-weight: 600;
+}

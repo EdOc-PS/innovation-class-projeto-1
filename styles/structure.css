@@ -256,17 +256,26 @@ header {
 }
 
 .section_banner {
+    .desktop-banner {
+        display: none;
+    }
 
-    img {
+    .mobile-banner {
         margin-top: 145px;
-        width: 100%;
-        height: 19.125rem;
-        object-fit: cover;
-        aspect-ratio: 14 / 6;
+
+        img {
+            width: 100%;
+        }
+        
+        .swiper-pagination-bullet {
+            background-color: var(--gray_strong);
+        }
+
     }
 }
 
 .section_carrossel {
+
     .container_carrossel {
         padding: 1rem;
         width: 100%;
@@ -318,8 +327,12 @@ header {
                 }
 
                 h3 {
-                    font-size: 14px;
+                    font-size: 12px;
                     font-weight: 500;
+
+                    span {
+                        font-size: 12px;
+                    }
                 }
 
                 .container_price {
@@ -337,6 +350,7 @@ header {
                             color: var(--white);
                             border-radius: 5px;
                             padding: .3rem;
+                            text-align: center;
                             font-weight: 500;
                             background-color: var(--blue_discount);
                         }
@@ -366,15 +380,7 @@ header {
 
         .swiper-button-prev,
         .swiper-button-next {
-            width: 10px;
-            height: 10px;
-            padding: .8rem;
-            box-shadow: 0 4px 7px -2px #0000006e;
-            border: 1px solid var(--blue);
-            border-radius: 50%;
-            background-color: var(--white);
-            display: flex;
-            align-items: center;
+            display: none;
         }
 
         .swiper-button-next::after,
@@ -382,6 +388,10 @@ header {
             font-size: 14px;
             color: var(--blue);
 
+        }
+
+        .swiper-pagination-bullet {
+            background-color: var(--gray_strong);
         }
 
         .container_guidance {
@@ -409,6 +419,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-top: 1rem;
 
     .content_detail {
         display: flex;
@@ -422,7 +433,7 @@ header {
 
         .container_text {
             padding: 1.5rem;
-
+            text-align: start;
             .content_desktop,
             .content_mobile {
                 display: flex;
@@ -435,7 +446,6 @@ header {
             }
 
             h1 {
-                text-align: start;
                 text-transform: uppercase;
                 letter-spacing: .1rem;
                 margin-bottom: 1.5rem;
@@ -494,7 +504,7 @@ header {
 .section_banner_menssage {
     .container_img {
         position: relative;
-        height: 35vh;
+        height: 28.0625rem;
 
         img {
             width: 100%;
@@ -640,52 +650,40 @@ footer {
                     border-bottom: 2px solid #ddd;
                     padding: 1.25rem;
 
+
+
                     summary {
                         list-style: none;
-                        font-weight: 700;
                         font-size: 18px;
                         display: flex;
                         justify-content: space-between;
-                        
-                        .content_words{
+
+                        .content_words {
                             display: flex;
                             align-items: center;
                             gap: 5px;
 
-                            .elements_heading{
-                                font-size: 14px;
-                                color: #656565;
-                            }
+
                         }
 
                         i {
                             color: var(--blue);
                             font-size: 20px;
                         }
-                       
                     }
 
-                    
+                    .ul_list {
+                        margin-top: 5px;
+                    }
 
                     .ul_list,
                     ul {
                         flex-direction: column;
-                        
-                        .li_list{
+
+                        .li_list {
                             display: flex;
                             align-items: center;
                             gap: 5px;
-                        }
-
-                        .li_list:last-child{
-                            flex-direction: column;
-                            align-items: start;
-
-                            .text_sublist{
-                                display: flex;
-                                align-items: center;
-                                gap: 5px;
-                            }
                         }
 
                         .li_list,
@@ -699,12 +697,29 @@ footer {
                         h5 {
                             font-weight: 400;
                         }
+
+                        li {
+                            font-size: 12px;
+                        }
                     }
                 }
 
                 details:nth-child(2) {
                     border-top: 0px solid #ddd;
                     border-bottom: 0px solid #ddd;
+                }
+
+                details:last-child {
+                    .li_list:last-child {
+                        flex-direction: column;
+                        align-items: start;
+
+                        .text_sublist {
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                        }
+                    }
                 }
             }
         }
